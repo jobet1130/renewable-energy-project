@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=69.0.0", "wheel>=0.42.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "physics-analytics"
+version = "1.0.0"
+description = "A data science project focusing on physics analytics, renewable energy insights, and advanced data visualization."
+authors = [
+    { name = "Jobet Casquejo", email = "jobetcasquejo221@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["physics", "data-science", "visualization", "analytics", "renewable-energy"]
+requires-python = ">=3.10"
+
+dependencies = [
+    "numpy>=2.1.0",
+    "pandas>=2.2.2",
+    "matplotlib>=3.9.2",
+    "seaborn>=0.13.2",
+    "scipy>=1.14.1",
+    "jupyter>=1.0.0",
+    "scikit-learn>=1.5.2",
+    "plotly>=5.24.1"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=24.4.2",
+    "flake8>=7.1.1",
+    "mypy>=1.11.2",
+    "pytest>=8.3.2"
+]
+
+[project.urls]
+homepage = "https://portfolific.vercel.app/"
+repository = "https://github.com/jobet1130/renewable-energy-project.git"
+documentation = "https://portfolific.vercel.app/"
+issues = "https://github.com/jobet1130/renewable-energy-project/issues"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+
+[tool.mypy]
+python_version = 3.10
+strict = true
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
