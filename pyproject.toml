@@ -39,6 +39,9 @@ repository = "https://github.com/jobet1130/renewable-energy-project.git"
 documentation = "https://portfolific.vercel.app/"
 issues = "https://github.com/jobet1130/renewable-energy-project/issues"
 
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [tool.black]
 line-length = 88
 target-version = ["py310"]
