@@ -106,3 +106,5 @@ pytest_cache/
 # ==========================
 .env
 .env.*
+
+.docker-entrypoint-initdb.d/
